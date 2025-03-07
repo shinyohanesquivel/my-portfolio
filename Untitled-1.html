@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e1e;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #0066cc, #003366);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            animation: fadeInDown 1s;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 180px 60px 60px;
+            text-align: center;
+            animation: fadeInUp 1s;
+        }
+        .profile {
+            text-align: center;
+            margin-top: 80px;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ffcc00;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+        }
+        .profile h2 {
+            margin-top: 10px;
+            font-size: 28px;
+        }
+        .profile p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            backdrop-filter: blur(10px);
+        }
+        .project:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            font-size: 14px;
+            animation: fadeInUp 1s;
+        }
+        a {
+            color: #ffcc00;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background: #ffcc00;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background: #ffaa00;
+            transform: translateY(-3px);
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .skills-list li {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffcc00;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div class="profile">
+            <img src="profile-picture.jpg" alt="Your Profile Picture">
+            <h2>James Bryan S. Ararao</h2>
+            <p>As a passionate Graphic Designer, Front-End Developer, and IT student, I bring creativity and technical skills together to craft stunning visuals and functional web applications.</p>
+        </div>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Graphic Design (Photoshop, Illustrator, Figma)</li>
+            <li>Front-End Development (HTML, CSS, JavaScript, React)</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Web Design</li>
+            <li>IT & Software Development</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A modern portfolio showcasing my works.</p>
+            </div>
+            <div class="project">
+                <h3>E-Commerce UI Design</h3>
+                <p>Designed and developed an e-commerce front-end.</p>
+            </div>
+            <div class="project">
+                <h3>Graphic Design Showcase</h3>
+                <p>Various branding and visual projects.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
